@@ -1,7 +1,7 @@
 const message = 'the chibreakbeat calculator'
 let N1 = prompt("Escolha um numero");
 let N2 = prompt("Escolha outro numero");
-let OperationType = prompt("escolha uma operação (1 - adição, 2 - subtração, 3 - multiplicação, 4- divisão)");
+let OperationType = prompt("escolha uma operação (+/add/1 - adição, -/sub/2 - subtração, */multi/3 - multiplicação, /4 e div - divisão)");
 let N1Int = parseInt(N1);
 let N2Int = parseInt(N2);
 let V;
@@ -9,22 +9,22 @@ let V;
 document.querySelector('#header').innerHTML = message
 
 console.log(message)
-if(OperationType == "1")
+if(OperationType == "+" || "add" || "1")
 {
    V=N1Int + N2Int
    alert("o resultado é:" +V);
 }
-else if(OperationType == "2")
+else if(OperationType == "-"|| "sub" || "2")
 {
   V=N1Int - N2Int
   alert("o resultado é:" +V);
 }
-else if(OperationType == "3")
+else if(OperationType == "*"|| "multi" || "3")
 {
   V=N1Int * N2Int
   alert("o resultado é:" +V);
 }
-else if(OperationType == "4" )
+else if(OperationType == "/" || "div" || "4")
 {
   if(N2 !== "0"){
     V=N1Int / N2Int
@@ -37,7 +37,7 @@ else if(OperationType == "4" )
   
 }
 
-else if(!["1", "2", "3", "4"].includes(OperationType))
+else if(!["+", "-", "*", "/"].includes(OperationType))
   {
     alert("po escolhe algo ai mano");
   }
