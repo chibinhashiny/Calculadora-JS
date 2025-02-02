@@ -45,7 +45,8 @@ else if(!["+", "-", "*", "/"].includes(OperationType))
 
 
 console.log(V);
-document.querySelector('#header').innerHTML = V; 
+document.querySelector('#header').innerHTML = "resultado:" + V; 
+document.querySelector('#paragrafo').innerHTML = "A CALCULADORA MAIS INSANA DOS SETE MARES";
 
 
 
