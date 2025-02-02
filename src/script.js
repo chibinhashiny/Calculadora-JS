@@ -9,22 +9,22 @@ let V;
 document.querySelector('#header').innerHTML = message
 
 console.log(message)
-if(OperationType == "+" || "add" || "1")
+if(OperationType == "+" || OperationType == "add" ||  OperationType == "1")
 {
    V=N1Int + N2Int
    alert("o resultado é:" +V);
 }
-else if(OperationType == "-"|| "sub" || "2")
+else if(OperationType == "-"|| OperationType == "sub" || OperationType == "2")
 {
   V=N1Int - N2Int
   alert("o resultado é:" +V);
 }
-else if(OperationType == "*"|| "multi" || "3")
+else if(OperationType == "*"||  OperationType =="multi" || OperationType == "3")
 {
   V=N1Int * N2Int
   alert("o resultado é:" +V);
 }
-else if(OperationType == "/" || "div" || "4")
+else if(OperationType == "/" || OperationType == "div" || OperationType == "4")
 {
   if(N2 !== "0"){
     V=N1Int / N2Int
