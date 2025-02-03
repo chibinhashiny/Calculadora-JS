@@ -7,6 +7,30 @@
   <title>calculadora insana</title>
 </head>
 <body>
+  < <button id="playButton"> Tocar Música </button>
+  <audio id="minhaMusica">
+    <source src="musicas/ironmanchopped.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <script>
+    const playButton = document.getElementById('playButton');
+    const minhaMusica = document.getElementById('minhaMusica');
+    playButton.addEventListener('click', function() {
+      minhaMusica.play().catch(error => {
+        console.error("Erro ao tentar reproduzir a música:", error);
+      });
+    });
+
+  
+
+
+  </script>
+
+  <button id="add">Adicionar</button>
+  <button id="sub">Subtrair</button>
+  <button id="mult">Multiplicar</button>
+  <button id="div">Dividir</button>
 
 <h1 id = "header"></h1>
 <p id = "paragrafo"></p>
